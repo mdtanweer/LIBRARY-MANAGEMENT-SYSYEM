@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style_home.css">
+<style>
+* {box-sizing: border-box;
+border-radius:10px;
+
+
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {border-radius:10px;
+    padding: 30px 10px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+	width: 100%;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+	width: 100%;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <nav>
+        <h1>NMRS</h1>
+            <ul id="nav">
+                <li><a class="hover" href="admin.html">HOME</a></li>
+				<li><a class="hover" href="bstat.html">BOOK STATUS</a></li>
+                <li><a class="hover" href="notes.html">NOTES SECTION</a></li>
+				<li><a class="hover" href="libstat.html">LIBRARY STATUS</a></li>
+				<li><a class="hover" href="index.html">SIGN OUT</button></a></li>
+			</ul>
+        </nav> 
+  </header>
+<h1><center>Event Calander</center></h1>
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      April<br>
+      <span style="font-size:18px">2018</span>
+    </li>
+  </ul>
+</div>
+<ul class="weekdays">
+  <li>Su</li>
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  
+</ul>
+
+<ul class="days">  
+  
+  <li><button type="button" onclick="abc()">1</button></li>
+  <li><button type="button" onclick="pqr()">2</button></li>
+  <li><button type="button" onclick="pqr()">3</button></li>
+  <li><button type="button" onclick="pqr()">4</button></li>
+  <li><button type="button" onclick="pqr()">5</button></li>
+  <li><button type="button" onclick="pqr()">6</button></li>
+  <li><button type="button" onclick="pqr()">7</button></li>
+  <br>
+  <li><button type="button" onclick="pqr()">8</button></li>
+  <li><button type="button" onclick="pqr()">9</button></li>
+  <li><button type="button" onclick="mno()">10</button></li>
+  <li><button type="button" onclick="pqr()">11</button></li>
+  <li><button type="button" onclick="pqr()">12</button></li>
+  <li><button type="button" onclick="pqr()">13</button></li>
+  <li><button type="button" onclick="def()">14</button></li>
+  <br>
+  <li><button type="button" onclick="pqr()">15</button></li>
+  <li><button type="button" onclick="pqr()">16</button></li>
+  <li><button type="button" onclick="pqr()">17</button></li>
+  <li><button type="button" onclick="pqr()">18</button></li>
+  <li><button type="button" onclick="pqr()">19</button></li>
+  <li><button type="button" onclick="pqr()">20</button></li>
+  <li><button type="button" onclick="pqr()">21</button></li>
+  <br>
+  <li><button type="button" onclick="ghi()">22</button></li>
+  <li><button type="button" onclick="pqr()">23</button></li>
+  <li><button type="button" onclick="pqr()">24</button></li>
+  <li><button type="button" onclick="pqr()">25</button></li>
+  <li><button type="button" onclick="pqr()">26</button></li>
+  <li><button type="button" onclick="pqr()">27</button></li>
+  <li><button type="button" onclick="pqr()">28</button></li>
+  <br>
+  <li><button type="button" onclick="pqr()">29</button></li>
+  <li><span class="active"><button type="button" onclick="jkl()">30</button></span></li>
+  <p id="a"></p>
+</ul>
+<script>
+function abc()
+{
+document.getElementById('a').innerHTML="1.Do audit and check total books<br>2.Renew newspapers and magazine subscriptions<br>3.Give salaries to employees";
+}
+function def()
+{
+document.getElementById('a').innerHTML="Ambedkar Jayanti<br>Host a Ambedkar related book reading session";
+}
+function ghi()
+{
+document.getElementById('a').innerHTML="Earth Day<br>Spread flyers of library with earth day slogans<br>Ask members to advertise";
+}
+function jkl()
+{
+document.getElementById('a').innerHTML="HTML project external viva from 9:00AM to 12:30PM";
+}
+function mno()
+{
+document.getElementById('a').innerHTML="Internation Librarian Conference @ Phagwara";
+}
+function pqr()
+{
+document.getElementById('a').innerHTML="No events on this day :). Just relax";
+}
+</script>
+<br><br><br>
+<marquee><b><i>A reader lives a thousand lives before he dies, but a man who never reads lives only once.</b></i></marquee>
+</body>
+</html>

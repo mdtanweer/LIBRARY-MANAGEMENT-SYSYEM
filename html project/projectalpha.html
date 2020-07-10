@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style_home.css">
+	<script src="java1.js" type="text/javascript"></script>
+	<style>
+body {
+	background-image:url("mainbg.jpg");
+     background-repeat: no-repeat;
+     background-size: 1400px 787px;}
+.mySlides {display: none}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkblue;
+	
+}
+</style>
+    </head>
+    <body>
+    <header>
+        <nav>
+        <h1>NMRS</h1>
+            <ul id="nav">
+                <li><a class="hover" href="rules.html">LIBRARY RULES</a></li>
+			<div class="dropdown" style="float:left;">
+				<button class="dropbtn">BOOKS</button>
+				<div class="dropdown-content" style="left:0;">
+				<a href="cse.html">CSE</a>
+				<a href="ece.html">ECE</a>
+				<a href="mech.html">MECHANICS</a>
+				<a href="mth.html">MATHS</a>
+				</div>
+			</div>
+			<li><a class="hover" href="http://community.worldlibrary.in/?AffiliateKey=NDL-BL1198">E-BOOK LIBRARY</a></li>
+				<li><a class="hover" href="https://swayam.gov.in/">E-LEARNING</a></li>
+				<li><a class="hover" href="news.html">NEWSPAPERS</a></li>
+                <li><a class="hover" href="notes.html">NOTES SECTION</a></li>
+				<li><a class="hover" href="bookret.html">RETURN BOOK</a></li>
+				<li><a class="hover" href="index.html">SIGN OUT</button></a></li>
+			</ul>
+        </nav>
+		
+        
+        </header>
+<div class="w3-content" style="max-width:1500px;margin-top:2px">
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q1.png" style="width:100%;height:300px"> 
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q2.png" style="width:100%;height:300px">    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q3.png" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q4.png" style="width:100%;height:300px">
+  </div>
+    <div class="mySlides w3-display-container w3-center">
+    <img src="q5.png" style="width:100%;height:300px"> 
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q6.png" style="width:100%;height:300px">    
+  </div>
+   <div class="mySlides w3-display-container w3-center">
+    <img src="q7.png" style="width:100%;height:300px"> 
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q8.png" style="width:100%;height:300px">    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q9.png" style="width:100%;height:300px">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="q10.png" style="width:100%;height:300px">
+  </div>
+<h1 align="center">NMRS</h1>
+<h3 align="center" "font-family:Tangerine"><i>We Love Books</i></h3>
+<p align="center"><b><br>This project has been developed by our team as a practical test to check our depth of knowledge in web page designing. This is a 'Library Management System'. Although this website is not as flawless as we had planned to make it, we are still extremely proud of our brainchild.<br><br></b></p>
+</div>
+</div>
+    <header>
+        <nav>
+     <div><h1>NMRS</h1></div>
+	 <a href="insta.html">
+	 <img src="i1.png" style="width:50px;height:50px;margin-top:0px"> 
+	 </a>
+	 <a href="fb.html">
+	 <img src="i2.png" style="width:50px;height:50px;margin-top:0px"> 
+	 </a>
+	 
+        </nav>
+ 
+        </header>
+        <script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>
+
+    </body>
+</html>

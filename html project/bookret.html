@@ -1,0 +1,31 @@
+<html>
+<head><center>
+<title>RETURN SUCCESS</title></center>
+<h1><i><center>RETURNING BOOKS</center></i></h1>
+</head>
+<style>
+ body {
+     background-image:url("merci.jpg");
+     background-repeat: no-repeat;
+     background-size: 1400px 650px;	
+      }
+</style>
+<body>
+
+<script>
+var x=Number(prompt("enter the no of days"));
+if(x<0){alert("please enter positive number")}
+if(x<=7)
+{
+document.write("Thank you");
+}
+else
+{
+var s=x-7;
+var y=s*10;
+document.write("You need to pay Rs "+y);
+document.write(". Thank you for using NMRS Library Management System");
+} 
+</script>
+</body>
+</html>

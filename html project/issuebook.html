@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style_home.css">
+</head>
+<body>
+<style>
+ body {
+     background-image:url("li1.jpg");
+     background-repeat: no-repeat;
+     background-size: 1400px 650px;	
+      }
+h2 {
+color: rgb(255,0,0)
+}
+</style>
+<header>
+        <nav>
+        <h1>NMRS</h1>
+            <ul id="nav">
+                <li><a class="hover" href="project1.html">HOME</a></li>
+				<li><a class="hover" href="index.html">SIGN OUT</a></li>
+                </ul>
+        </nav> 
+  </header>
+<div style="text-align: center;">
+<h1>Quote Of The Day!</h1>
+  <h3>
+    <marquee>If you have a garden and a library, you have everything you need.!! Books are best companions for humans..!!</marquee>
+  </h3>
+
+<form method="post" action="project1.html">
+     
+<form action="success.html">
+
+<div style="text-align: center;"><br><br><br>
+
+
+
+<h3>Book Name*   
+<input type="text" name="book name" placeholder="Enter Book Name" required>
+<br><br>
+Contact Number* 
+<input type="number" name="Contact number"  required/>
+<br><br>
+Subject   <select name="maths"><option value="a">MATHEMATICS</option>
+<option value="b">MECHANICS</option>
+<option value="c">PHYSICS</option>
+</select><br><br>
+Date of issue  <input type="date" id="f1" value="date"><br><br>
+No of days  <input type="radio" name="no of days" value="1">1
+<input type="radio" name="no of days" value="2">2
+<input type="radio" name="no of days" value="3">3
+<input type="radio" name="no of days" value="4">4
+<input type="radio" name="no of days" value="5">5
+<input type="radio" name="no of days" value="6">6
+<input type="radio" name="no of days" value="7">7
+<button onclick="myFunction()">NOTE</button><br><br>
+No of books     <input type="number" id="f2" value="number"><br><br></h3>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "<h2><marquee>If you exceed more than 7 days.then you will be fined 10Rs for every extra day</marquee></h2>";
+}
+</script>
+<br>
+<input type="submit" value="Issue Book" name="Issue Book" /><br>
+
+</form>
+</body>
+</html>
+  

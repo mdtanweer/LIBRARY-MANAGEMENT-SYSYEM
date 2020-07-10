@@ -1,0 +1,100 @@
+
+
+.iteam1
+{
+grid-area:head;
+font-size:30px;
+padding-bottom:200px;
+background-image:url(r10.jpg);
+background-repeat:no-repeat;
+background-size:100%;
+}
+.grid-container > div
+{
+color:white;
+font-family: "Comic Sans MS";
+text-align:center;
+}
+
+#c{
+color:black;
+width:85%;
+padding:35px;
+background-image:url(library home.jpg);
+background-repeat:no-repeat;
+background-size:100%;
+}
+#image{
+border-radius:50%;
+}
+a
+{
+color:white;
+font-size:30px;
+text-decoration:none;
+padding-left:60px;
+float:center;
+}
+
+#c
+{
+color:black;
+font-size:30px;
+text-decoration:none;
+padding-left:60px;
+float:center;
+font-weight:bold;
+}
+a:hover
+{
+color:blue;
+}
+body{
+background-image:url("library home.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 840px;
+  margin: 0 auto;
+}
+
+#contents {
+  background-color:black;
+  padding: 20px 30px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  max-height: 1500px;
+  overflow: hidden;
+  transition: max-height 0.4s;
+}
+
+.open {
+  max-height: 960px!important;
+}
+
+button.primary {
+  background: #003399;
+  border: none;
+  margin-top: 10px;
+  padding: 14px;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.iteam4
+{
+grid-area:footer;
+padding:90px;
+background-image:url(library.jpg);
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+
+
